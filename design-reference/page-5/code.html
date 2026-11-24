@@ -1,0 +1,537 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary-container": "#00b150",
+          "outline": "#a98a7f",
+          "secondary-fixed": "#ffddb1",
+          "surface-dim": "#131318",
+          "on-primary-fixed": "#380d00",
+          "on-tertiary-fixed-variant": "#005321",
+          "surface-container-lowest": "#0e0e13",
+          "primary": "#ffb59a",
+          "error": "#ffb4ab",
+          "on-surface-variant": "#e2bfb3",
+          "inverse-on-surface": "#303035",
+          "surface-container-low": "#1b1b20",
+          "on-primary-container": "#5c1c00",
+          "on-surface": "#e4e1e8",
+          "on-tertiary-container": "#003a16",
+          "on-tertiary-fixed": "#002109",
+          "secondary-fixed-dim": "#ffba4b",
+          "secondary-container": "#ea9f00",
+          "surface-container-high": "#2a292f",
+          "on-tertiary": "#003915",
+          "on-secondary": "#442b00",
+          "primary-container": "#ff6b2c",
+          "primary-fixed": "#ffdbcf",
+          "secondary": "#ffbd58",
+          "tertiary-fixed": "#6bff8f",
+          "on-primary": "#5b1b00",
+          "error-container": "#93000a",
+          "tertiary": "#4ae176",
+          "surface-variant": "#35343a",
+          "outline-variant": "#594139",
+          "on-secondary-fixed-variant": "#624000",
+          "on-background": "#e4e1e8",
+          "surface-tint": "#ffb59a",
+          "surface-container-highest": "#35343a",
+          "surface-container": "#1f1f24",
+          "on-secondary-container": "#5b3b00",
+          "on-primary-fixed-variant": "#802900",
+          "on-secondary-fixed": "#291800",
+          "background": "#131318",
+          "surface-bright": "#39393e",
+          "on-error-container": "#ffdad6",
+          "tertiary-fixed-dim": "#4ae176",
+          "primary-fixed-dim": "#ffb59a",
+          "inverse-surface": "#e4e1e8",
+          "surface": "#131318",
+          "on-error": "#690005",
+          "inverse-primary": "#a83900"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2rem",
+          "gutter-mobile": "0.75rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "1rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "margin": "2rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-xl-mobile": [
+            "Outfit"
+          ],
+          "headline-lg-mobile": [
+            "Outfit"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Outfit"
+          ],
+          "headline-lg": [
+            "Outfit"
+          ],
+          "headline-md": [
+            "Outfit"
+          ],
+          "title-md": [
+            "Outfit"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Outfit"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen" style="min-height: 100vh; height: auto !important; overflow: visible !important; overscroll-behavior: auto !important;"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full max-w-[1440px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="FireGuard Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XzNAUlbZsTPMEmv3onAPWPjQZbp7mfGFNUuQpq6ZavnvbKOFztEFVtzHUaCERud9__GIq0U04ZUrfNtm51gj1XwdSQhwQd6eKs8-NmoloXb-aYDlSLgTazylXLBVCYDTfxrS7euWcMVIlwtzQHg2-GQkS28a8RrQqykZ_C40IYp24jfEWovUcaC5YVecsocRkZVijO1FFVo7Vs4oGR_0ceUFWotph2-__QzEQHBIr4UvnStx3L8Vk-cA"><span class="font-title-md text-title-md text-on-surface tracking-wide uppercase">FireGuard</span></div><nav class="hidden md:flex items-center gap-space-md" data-active-classes="text-on-surface bg-surface-container-high rounded-lg"><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="#">Products</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="#">Dashboard</a></nav><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Connected • Wi-Fi 98%</span></div><div class="flex items-center gap-space-sm pl-space-xs"><span class="hidden sm:inline font-label-md text-label-md text-on-surface">Yashas Bhalla</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-[260px] bg-surface-container-low z-40 flex flex-col justify-between p-space-md"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container rounded-lg font-label-md shadow-[0_0_16px_rgba(255,107,44,0.35)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container rounded-lg font-label-md shadow-[0_0_16px_rgba(255,107,44,0.35)]" data-path="robot-control" href="#"><span class="material-symbols-outlined text-[20px]">precision_manufacturing</span><span class="font-label-md text-label-md">Robot Control</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="alerts-&amp;-reports" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">warning</span><span class="font-label-md text-label-md">Alerts &amp; Reports</span></div><span class="px-space-xs py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">2</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-md text-label-md">Profile</span></a></nav><div class="pt-space-md"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-error hover:bg-error-container hover:text-on-error-container transition-all" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-label-md text-label-md uppercase tracking-wider">Logout</span></a></div></aside><div class="pl-[260px]"><main class="relative pt-16 bg-background min-h-screen px-margin py-space-lg max-w-[1180px] pb-space-md" style="min-height: 100vh; height: auto !important; overflow: visible !important;"><div class="flex flex-col w-full gap-space-lg">
+<!-- Operational Breadcrumb & Header Bar -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-xs">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm tracking-wider uppercase">Unit IGNIS-F01 • Teleop Link Active</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">RC Mode Ready</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Autonomous Robot Teleoperation &amp; Spatial Tracking</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Direct manual override controls, water suppression trigger, and live GPS positioning for Rover units.
+      </p>
+</div>
+<!-- Quick Teleop State Controls -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container-high shadow-inner">
+<span class="material-symbols-outlined text-secondary text-[18px]">cell_tower</span>
+<span class="font-label-sm text-label-sm text-on-surface">Ping: <strong class="text-on-surface">14ms</strong></span>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-error text-on-error font-label-md text-label-md uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all shadow-[0_0_20px_rgba(239,68,68,0.4)]" id="e-stop-main">
+<span class="material-symbols-outlined text-[18px]">front_hand</span>
+<span class="">E-Brake All</span>
+</button>
+</div>
+</div>
+<!-- Primary 2-Column Operational Deck -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- LEFT COLUMN: Manual Teleoperation Deck (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- D-Pad & Actuator Controls Card -->
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col gap-space-lg relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-36 h-36 rounded-full bg-primary-container/5 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">sports_esports</span>
+<h2 class="font-title-md text-title-md text-on-surface">Manual Teleop Deck</h2>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant uppercase tracking-wider">CAN-Bus v2.4</span>
+</div>
+<!-- Visual Hardware D-Pad -->
+<div class="flex flex-col items-center justify-center p-space-md rounded-xl bg-surface-container-lowest/60">
+<div class="relative w-56 h-56 flex items-center justify-center">
+<!-- Forward (UP) -->
+<button aria-label="Drive Forward" class="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 rounded-xl bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container flex items-center justify-center shadow-md active:scale-90 transition-all group" id="btn-fwd">
+<span class="material-symbols-outlined text-[28px] group-hover:-translate-y-0.5 transition-transform">arrow_upward</span>
+</button>
+<!-- Left -->
+<button aria-label="Turn Left" class="absolute left-0 top-1/2 -translate-y-1/2 w-16 h-16 rounded-xl bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container flex items-center justify-center shadow-md active:scale-90 transition-all group" id="btn-left">
+<span class="material-symbols-outlined text-[28px] group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
+</button>
+<!-- Central STOP / BRAKE Button -->
+<button aria-label="Emergency Stop" class="w-18 h-18 p-3 rounded-2xl bg-error-container text-on-error-container hover:brightness-125 flex flex-col items-center justify-center shadow-[0_0_24px_rgba(239,68,68,0.45)] active:scale-95 transition-transform z-10" id="btn-brake">
+<span class="material-symbols-outlined text-[24px]">stop_circle</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wider uppercase">Brake</span>
+</button>
+<!-- Right -->
+<button aria-label="Turn Right" class="absolute right-0 top-1/2 -translate-y-1/2 w-16 h-16 rounded-xl bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container flex items-center justify-center shadow-md active:scale-90 transition-all group" id="btn-right">
+<span class="material-symbols-outlined text-[28px] group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</button>
+<!-- Reverse (DOWN) -->
+<button aria-label="Drive Reverse" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-16 rounded-xl bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container flex items-center justify-center shadow-md active:scale-90 transition-all group" id="btn-rev">
+<span class="material-symbols-outlined text-[28px] group-hover:translate-y-0.5 transition-transform">arrow_downward</span>
+</button>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-space-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">keyboard</span> Use WASD or directional pad for micro-stepping
+          </p>
+</div>
+<!-- Speed Throttle Slider -->
+<div class="space-y-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1" for="speed-slider">
+<span class="material-symbols-outlined text-[16px] text-primary">speed</span> Speed Throttle
+            </label>
+<span class="font-label-md text-label-md text-primary font-mono" id="speed-display">1.2 m/s (Standard)</span>
+</div>
+<input class="w-full h-2 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary-container" id="speed-slider" max="2.8" min="0.4" step="0.2" type="range" value="1.2">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant pt-1 px-1">
+<span class="">0.4 m/s (Eco)</span>
+<span class="">1.6 m/s (Standard)</span>
+<span class="">2.8 m/s (Boost)</span>
+</div>
+</div>
+<!-- Water Foam Suppression Sub-system -->
+<div class="rounded-xl bg-surface-container p-space-md space-y-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Foam Suppression Pump</p>
+<p class="font-label-sm text-label-sm text-tertiary">Pressure: 4.2 Bar • Tank: 88% Full</p>
+</div>
+</div>
+<!-- Toggle -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="pump-toggle" type="checkbox">
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-tertiary"></div>
+</label>
+</div>
+<div class="pt-space-xs">
+<button class="w-full flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-xl bg-surface-container-high hover:bg-error-container hover:text-on-error-container text-on-surface transition-all shadow-[0_0_16px_rgba(255,107,44,0.15)] group active:scale-[0.98]" id="btn-discharge">
+<span class="material-symbols-outlined text-primary group-hover:text-on-error-container text-[20px] transition-colors">emergency_heat</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Emergency Manual Discharge</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Live Camera Feed Panel (Locked Modal Overlay) -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-xl flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">videocam</span>
+<span class="font-label-md text-label-md text-on-surface">Chassis Thermal / Optical Stream</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Tier Locked
+          </span>
+</div>
+<!-- 16:9 Video Monitor Aspect Container -->
+<div class="relative aspect-video w-full rounded-lg overflow-hidden bg-surface-container-lowest flex items-center justify-center shadow-inner">
+<!-- Background Simulated Frame (Static/Glitch/Blurred) -->
+<img class="w-full h-full object-cover filter blur-[6px] opacity-25 scale-105" data-alt="Dark high-contrast night vision thermal optical robot sensor camera view looking out at an industrial warehouse corridor with subtle orange heat signatures and glowing grid reticles, low illumination, tactical aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAojkjBn8lUOdpUm9PZxlZKeFR4agf33nZRvsjGX2kVF9r9E5Mf0sG_oS-folUAPja-eP_HRl-mpA3s7XIqMpxFpJcyuZMyLgOpPO0OME6cgPRzJLvsQexiweYHNLi-d8qcn4B58gjUN6Ac8zALHnxbaggRNVQU1VO5WE6fqGu_QebKUJjTwguXyPuhtN2RjdJld5ed5J2yTPJ9aD4FFfU96kKUYNDvlybFqRcrqwaU8S9rAt9UtILh">
+<!-- Scanline Decorative Lines -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent bg-[length:100%_4px] pointer-events-none opacity-40"></div>
+<!-- Frosted Glass LOCKED Overlay -->
+<div class="absolute inset-0 bg-surface-container-lowest/80 backdrop-blur-md flex flex-col items-center justify-center p-space-md text-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center shadow-[0_0_20px_rgba(255,189,88,0.35)]">
+<span class="material-symbols-outlined text-secondary text-[26px]">lock</span>
+</div>
+<div class="max-w-xs space-y-1">
+<p class="font-title-md text-title-md text-on-surface">Thermal Camera Feed Locked</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Thermal Night-Vision Camera Feed is locked on your current HomeGuard tier.
+              </p>
+</div>
+<button class="mt-space-xs px-space-md py-space-xs rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all shadow-[0_0_16px_rgba(255,107,44,0.4)]">
+              Upgrade to Sentinel Pro
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Spatial Navigation & GPS Map (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="h-full rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col relative overflow-hidden">
+<!-- Header Metadata for Map -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-md z-10">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">explore</span>
+<h2 class="font-title-md text-title-md text-on-surface">Spatial Telemetry &amp; GPS Blueprint</h2>
+</div>
+<div class="flex items-center gap-space-xs font-mono font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-space-sm py-1 rounded-md">
+<span class="text-primary">LAT:</span> 19.0760° N &nbsp;|&nbsp;
+            <span class="text-primary">LON:</span> 72.8777° E &nbsp;|&nbsp;
+            <span class="text-primary">ALT:</span> 14m
+          </div>
+</div>
+<!-- Tactical Blueprint Canvas Area -->
+<div class="relative flex-1 min-h-[440px] w-full rounded-xl bg-surface-container-lowest overflow-hidden flex items-center justify-center shadow-inner">
+<!-- Static Tactical Grid Vector Blueprint -->
+<svg class="absolute inset-0 w-full h-full opacity-30 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="tactical-grid" patternUnits="userSpaceOnUse" width="40">
+<path class="text-outline-variant/60" d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="0.8"></path>
+<circle class="text-primary/40" cx="0" cy="0" fill="currentColor" r="1.5"></circle>
+</pattern>
+</defs>
+<rect fill="url(#tactical-grid)" height="100%" width="100%"></rect>
+<!-- Patrol Route Alpha Waypoint Path (Simulated) -->
+<path class="text-primary-container/70" d="M 120 320 L 260 210 L 410 280 L 580 140 L 720 220" fill="none" stroke="currentColor" stroke-dasharray="6 4" stroke-width="2"></path>
+</svg>
+<!-- Underlay Tactical Map Imagery with placeholder -->
+<div class="absolute inset-0 w-full h-full opacity-35 filter blur-[2px]" data-alt="High angle dark tactical blueprint industrial facility GIS satellite view with vector waypoint grid lines, glowing orange route vectors, dark graphite floor plans." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCyKCFlgirHGfPCS-vy5pByITOCuvJ-IbakhRBCwzTTyNqGKWyEXGbRoIAioVqArDNO1NotS_Iw9DWfHvZ028SrwgzslTUpj2O-rJ9MCaI8uPSc1T0tRISaR5JwAyDyFo_miPD5YiBmKhky3ygNbqGmj6BIm4eV7IT7ONhWN63QiXRPH55wr2D_BVYlIlt05kGZ1Ty_BGcy6tP55SpG0kmUcmn6iXJmifQNfjIJiggiNkl-SaVIqe1e')"></div>
+<!-- Waypoint Markers on Canvas (Behind Lock scrim for contextual realism) -->
+<div class="absolute top-[28%] left-[34%] flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm text-label-sm font-bold shadow-[0_0_16px_rgba(255,107,44,0.6)] animate-pulse">
+              3
+            </div>
+<span class="mt-1 font-label-sm text-label-sm text-on-surface bg-surface-container-high/90 px-1.5 py-0.5 rounded shadow">WP-03 (Active)</span>
+</div>
+<div class="absolute top-[48%] left-[54%] flex flex-col items-center opacity-70">
+<div class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-sm text-label-sm font-bold shadow">
+              4
+            </div>
+<span class="mt-1 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest/80 px-1 py-0.5 rounded">WP-04</span>
+</div>
+<!-- Dynamic Rover Pin Representation -->
+<div class="absolute top-[28%] left-[34%] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+<div class="w-16 h-16 rounded-full bg-primary-container/20 animate-ping"></div>
+</div>
+<!-- Dark Frosted Glass LOCKED Modal Layer -->
+<div class="absolute inset-0 bg-surface-container-lowest/85 backdrop-blur-md flex flex-col items-center justify-center p-space-xl text-center z-20">
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary/10 text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[16px]">satellite_alt</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">GNSS Satellite RTK Required</span>
+</div>
+<div class="w-16 h-16 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-space-sm shadow-[0_0_24px_rgba(255,189,88,0.3)]">
+<span class="material-symbols-outlined text-secondary text-[36px]">lock_reset</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight mb-space-xs">
+              GPS Satellite Tracking &amp; Waypoint Navigation Locked
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-space-lg">
+              Centimeter-precision RTK satellite tracking, autonomous patrol loops, and custom perimeter geofencing are restricted to Rover Outdoor and Enterprise fleets.
+            </p>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm">
+<button class="w-full sm:w-auto px-space-lg py-space-sm rounded-xl bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all shadow-[0_0_20px_rgba(255,107,44,0.4)]">
+                Upgrade to Rover Outdoor
+              </button>
+<button class="w-full sm:w-auto px-space-md py-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md tracking-wider transition-all">
+                View Fleet Specs
+              </button>
+</div>
+<!-- Lock Feature Micro Checklist -->
+<div class="grid grid-cols-2 gap-x-space-lg gap-y-space-xs mt-space-lg text-left font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span>
+<span class="">8-Waypoint Autonomous Loop</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span>
+<span class="">Obstacle LiDAR Mesh Map</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span>
+<span class="">Geofenced Safe Zones</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[14px]">check_circle</span>
+<span class="">Automated Dock Return</span>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Map Coordinates Bar -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between px-space-md py-space-xs rounded-lg bg-surface-container-high/90 backdrop-blur text-on-surface z-30">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Current Mission: <strong class="text-on-surface">Patrol Route Alpha (Waypoint 3 of 8)</strong></span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">RTK Fix: Standby</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Hardware Telemetry Bottom Dock -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-md shadow-xl flex flex-wrap items-center justify-between gap-space-md">
+<!-- Rover Identity & State -->
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">smart_toy</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<p class="font-title-md text-title-md text-on-surface">IGNIS-01 Rover Telemetry</p>
+<span class="px-space-xs py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm">Nominal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Firmware: v4.12-RTOS • Sub-GHz Link Stable</p>
+</div>
+</div>
+<!-- Telemetry Metric Badges Grid -->
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Battery Life -->
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container">
+<span class="material-symbols-outlined text-tertiary text-[20px]">battery_charging_full</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Battery Power</p>
+<p class="font-label-md text-label-md text-on-surface font-mono">94% (LiFePO4)</p>
+</div>
+</div>
+<!-- RF Link -->
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container">
+<span class="material-symbols-outlined text-primary text-[20px]">wifi_tethering</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">RF Signal</p>
+<p class="font-label-md text-label-md text-on-surface font-mono">5.8 GHz Low-Lat</p>
+</div>
+</div>
+<!-- Motors & ESC -->
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container">
+<span class="material-symbols-outlined text-tertiary text-[20px]">tune</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Brushless ESC</p>
+<p class="font-label-md text-label-md text-on-surface">Calibrated</p>
+</div>
+</div>
+<!-- Chassis Thermal Sensor -->
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[20px]">device_thermostat</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Chassis Temp</p>
+<p class="font-label-md text-label-md text-on-surface font-mono">31.4°C</p>
+</div>
+</div>
+</div>
+</div>
+<footer class="w-full mt-space-lg pt-space-lg pb-space-md border-t border-surface-variant/40 bg-[#141418] rounded-xl px-space-lg"><div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg pb-space-lg"><div class="space-y-space-xs"><div class="flex items-center gap-space-sm"><img alt="FireGuard Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XzNAUlbZsTPMEmv3onAPWPjQZbp7mfGFNUuQpq6ZavnvbKOFztEFVtzHUaCERud9__GIq0U04ZUrfNtm51gj1XwdSQhwQd6eKs8-NmoloXb-aYDlSLgTazylXLBVCYDTfxrS7euWcMVIlwtzQHg2-GQkS28a8RrQqykZ_C40IYp24jfEWovUcaC5YVecsocRkZVijO1FFVo7Vs4oGR_0ceUFWotph2-__QzEQHBIr4UvnStx3L8Vk-cA"><span class="font-title-md text-title-md text-on-surface uppercase tracking-wide">FireGuard</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Fire safety that moves</p></div><div class="space-y-space-xs"><p class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">Quick Links</p><ul class="space-y-1 font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-primary transition-colors" href="#">Home</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Products</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Dashboard</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Login</a></li></ul></div><div class="space-y-space-xs"><p class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-semibold">Contact Us</p><ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant"><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">mail</span><span class="">contact@fireguard.com</span></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">call</span><span class="">+91 98765 43210</span></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">photo_camera</span><span class="">@fireguard.official</span></li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">location_on</span><span class="">Pune, Maharashtra</span></li></ul></div></div><div class="pt-space-md border-t border-surface-variant/30 text-center"><p class="font-label-sm text-label-sm text-on-surface-variant">© 2026 FireGuard. All rights reserved.</p></div></footer></div>
+<script>
+  // Simple Micro-Interactions for D-Pad and Throttle
+  const speedSlider = document.getElementById('speed-slider');
+  const speedDisplay = document.getElementById('speed-display');
+
+  if (speedSlider && speedDisplay) {
+    speedSlider.addEventListener('input', (e) => {
+      const val = parseFloat(e.target.value).toFixed(1);
+      let mode = "Standard";
+      if (val <= 0.8) mode = "Eco";
+      else if (val >= 2.2) mode = "Boost";
+      speedDisplay.textContent = `${val} m/s (${mode})`;
+    });
+  }
+
+  // Tactical visual click feedback for teleop keys
+  const buttons = ['btn-fwd', 'btn-left', 'btn-right', 'btn-rev', 'btn-brake', 'btn-discharge', 'e-stop-main'];
+  buttons.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('click', () => {
+        el.style.transform = 'scale(0.92)';
+        setTimeout(() => {
+          el.style.transform = '';
+        }, 120);
+      });
+    }
+  });
+</script></main></div>
+
+
+
+
+
+
+
+</body></html>

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: fireguard-demo
+    runtime: docker
+    dockerContext: .
+    dockerfilePath: ./backend/Dockerfile
+    healthCheckPath: /actuator/health
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: sim

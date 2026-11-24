@@ -1,0 +1,451 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary-container": "#00b150",
+          "outline": "#a98a7f",
+          "secondary-fixed": "#ffddb1",
+          "surface-dim": "#131318",
+          "on-primary-fixed": "#380d00",
+          "on-tertiary-fixed-variant": "#005321",
+          "surface-container-lowest": "#0e0e13",
+          "primary": "#ffb59a",
+          "error": "#ffb4ab",
+          "on-surface-variant": "#e2bfb3",
+          "inverse-on-surface": "#303035",
+          "surface-container-low": "#1b1b20",
+          "on-primary-container": "#5c1c00",
+          "on-surface": "#e4e1e8",
+          "on-tertiary-container": "#003a16",
+          "on-tertiary-fixed": "#002109",
+          "secondary-fixed-dim": "#ffba4b",
+          "secondary-container": "#ea9f00",
+          "surface-container-high": "#2a292f",
+          "on-tertiary": "#003915",
+          "on-secondary": "#442b00",
+          "primary-container": "#ff6b2c",
+          "primary-fixed": "#ffdbcf",
+          "secondary": "#ffbd58",
+          "tertiary-fixed": "#6bff8f",
+          "on-primary": "#5b1b00",
+          "error-container": "#93000a",
+          "tertiary": "#4ae176",
+          "surface-variant": "#35343a",
+          "outline-variant": "#594139",
+          "on-secondary-fixed-variant": "#624000",
+          "on-background": "#e4e1e8",
+          "surface-tint": "#ffb59a",
+          "surface-container-highest": "#35343a",
+          "surface-container": "#1f1f24",
+          "on-secondary-container": "#5b3b00",
+          "on-primary-fixed-variant": "#802900",
+          "on-secondary-fixed": "#291800",
+          "background": "#131318",
+          "surface-bright": "#39393e",
+          "on-error-container": "#ffdad6",
+          "tertiary-fixed-dim": "#4ae176",
+          "primary-fixed-dim": "#ffb59a",
+          "inverse-surface": "#e4e1e8",
+          "surface": "#131318",
+          "on-error": "#690005",
+          "inverse-primary": "#a83900"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2rem",
+          "gutter-mobile": "0.75rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "1rem",
+          "gutter": "1.5rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "margin": "2rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-xl-mobile": [
+            "Outfit"
+          ],
+          "headline-lg-mobile": [
+            "Outfit"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Outfit"
+          ],
+          "headline-lg": [
+            "Outfit"
+          ],
+          "headline-md": [
+            "Outfit"
+          ],
+          "title-md": [
+            "Outfit"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Outfit"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "30px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased" style="min-height: 100vh; height: auto !important; overflow: visible !important;"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full max-w-[1440px] mx-auto px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="FireGuard Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XzNAUlbZsTPMEmv3onAPWPjQZbp7mfGFNUuQpq6ZavnvbKOFztEFVtzHUaCERud9__GIq0U04ZUrfNtm51gj1XwdSQhwQd6eKs8-NmoloXb-aYDlSLgTazylXLBVCYDTfxrS7euWcMVIlwtzQHg2-GQkS28a8RrQqykZ_C40IYp24jfEWovUcaC5YVecsocRkZVijO1FFVo7Vs4oGR_0ceUFWotph2-__QzEQHBIr4UvnStx3L8Vk-cA"><span class="font-title-md text-title-md text-on-surface tracking-wide uppercase">FireGuard</span></div><nav class="hidden md:flex items-center gap-space-md" data-active-classes="text-on-surface bg-surface-container-high rounded-lg"><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="products" href="#">Products</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="#">Dashboard</a></nav><div class="flex items-center gap-space-md"><a class="bg-primary-container hover:bg-on-primary-fixed-variant text-on-primary font-label-md text-label-md px-space-lg py-space-xs rounded-lg transition-all shadow-[0_0_16px_rgba(255,107,44,0.4)]" data-path="login" href="#">Login</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background"><div class="flex flex-col w-full">
+<div class="relative w-full max-w-[1440px] mx-auto px-margin py-space-xl min-h-[calc(100vh-4rem)] flex items-center justify-center">
+<div class="absolute -top-32 left-12 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute bottom-10 right-20 w-[30rem] h-[30rem] bg-secondary-container/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 flex flex-col justify-between space-y-space-xl pr-0 lg:pr-space-md">
+<div class="flex flex-col space-y-space-sm">
+<div class="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            DEFENSE PROTOCOL // SECURE NODE
+          </div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+            FireGuard <span class="text-primary">Fleet Portal</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+            Mission-critical telemetry stream and command center for autonomous hazard response units.
+          </p>
+</div>
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container shadow-2xl group">
+<div class="relative h-96 w-full flex items-center justify-center bg-surface-container-lowest overflow-hidden">
+<img alt="FireGuard Ignis Autonomous Fire Safe Rover unit in high-spec armor configuration" class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuaGus9VACYn6rEYl1Yv99Ag3bDyJmSv7REM-hjulIyZX-bQXYjsXDLi2oPb-CqiE1RWs5D5W1XqNE5kgDd2hDsIAlT31GZnaOGcrmme9NFsHNQoYZrKj5QIURbViuT_U292fqAFnS4uszUxm9XKTr8WaLkYgRGWvDEF0QhVuVI1LxEnwawycjI7i14lksqnBL-_bUIhAg3_Vw15HwVzG9iw0agjvEAmfkMqAz28Kw-i2yJeasXJhs">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="absolute top-4 left-4 flex items-center gap-2 px-2.5 py-1 rounded-md bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="material-symbols-outlined text-tertiary text-[16px]">sensors</span>
+<span class="font-label-sm text-label-sm text-on-surface">IGNIS ROVER F-01 ACTIVE</span>
+</div>
+<div class="absolute top-4 right-4 flex items-center gap-1.5 px-2 py-0.5 rounded bg-primary-container/20 text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              LIVE 44.1 Hz
+            </div>
+<div class="absolute bottom-4 left-4 right-4 flex flex-col gap-1.5 bg-surface-container-low/90 backdrop-blur-md p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary">Autonomous Response Unit</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Thermal &amp; Gas Array OK</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+                “Empowering facilities with autonomous fire protection and real-time sensor intelligence.”
+              </p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="flex flex-col gap-1 bg-surface-container-low p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">enhanced_encryption</span>
+<span class="font-label-md text-label-md text-on-surface">256-bit AES</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Encrypted Telemetry Stream</span>
+</div>
+<div class="flex flex-col gap-1 bg-surface-container-low p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span class="font-label-md text-label-md text-on-surface">IoT Certified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Industrial SIL-2 Compliance</span>
+</div>
+<div class="flex flex-col gap-1 bg-surface-container-low p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]">crisis_alert</span>
+<span class="font-label-md text-label-md text-on-surface">Instant Push</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">&lt; 14ms Incident Broadcast</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 flex justify-center w-full mt-8 lg:mt-0">
+<div class="w-full max-w-lg bg-surface-container p-6 sm:p-8 rounded-2xl shadow-2xl shadow-black/80">
+<div class="flex w-full p-1 bg-surface-container-lowest rounded-xl mb-6">
+<button class="flex-1 py-2.5 rounded-lg font-label-md text-label-md transition-all text-center flex items-center justify-center gap-2 bg-surface-container-high text-on-surface shadow-md" id="tab-login" onclick="switchMode('login')" type="button">
+<span class="material-symbols-outlined text-[16px]">lock_open</span>
+              Operator Login
+            </button>
+<button class="flex-1 py-2.5 rounded-lg font-label-md text-label-md transition-all text-center flex items-center justify-center gap-2 text-on-surface-variant hover:text-on-surface" id="tab-register" onclick="switchMode('register')" type="button">
+<span class="material-symbols-outlined text-[16px]">badge</span>
+              Register Unit
+            </button>
+</div>
+<div class="mb-5 p-3 rounded-lg bg-error-container/40 flex items-start gap-2.5 text-error" id="status-banner">
+<span class="material-symbols-outlined text-[20px] shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">Access Restriction Detected</span>
+<span class="font-body-sm text-body-sm text-on-error-container">Email already registered in sector database. Try logging in or verify master credential.</span>
+</div>
+</div>
+<form class="space-y-4" id="portal-form" onsubmit="event.preventDefault();">
+<div class="hidden flex-col space-y-1.5" id="field-fullname">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="full-name">
+                Full Name / Operational Call-sign
+                <span class="text-on-surface-variant font-label-sm text-label-sm">Mandatory</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-xl px-4 py-3 pl-11 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="full-name" placeholder="e.g. Commander Marcus Vance" type="text" value="Captain Yashas Bhalla">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-on-surface-variant text-[20px]">person</span>
+</div>
+</div>
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="operator-email">
+                Work / Terminal Email
+                <span class="text-on-surface-variant font-label-sm text-label-sm">Secured Protocol</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-xl px-4 py-3 pl-11 focus:outline-none focus:ring-2 focus:ring-error bg-error-container/10 transition-all" id="operator-email" placeholder="operator@fireguard-defense.internal" type="text" value="yashas.bhalla@invalid-domain">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-error text-[20px]">mail</span>
+<span class="material-symbols-outlined absolute right-3.5 top-3.5 text-error text-[20px]">error</span>
+</div>
+<p class="font-body-sm text-body-sm text-error flex items-center gap-1.5 pt-0.5">
+<span class="material-symbols-outlined text-[14px]">report_problem</span>
+                Invalid email format: Please enter a valid email address
+              </p>
+</div>
+<div class="flex flex-col space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface" for="operator-password">
+                  Master Password
+                </label>
+<a class="font-label-sm text-label-sm text-secondary hover:underline" href="#">Forgot password?</a>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-xl px-4 py-3 pl-11 pr-11 focus:outline-none focus:ring-2 focus:ring-error bg-error-container/10 transition-all" id="operator-password" placeholder="Enter high-entropy sequence" type="password" value="pass123">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-error text-[20px]">key</span>
+<button class="absolute right-3.5 top-3.5 text-on-surface-variant hover:text-on-surface focus:outline-none" onclick="togglePasswordVisibility('operator-password', 'pwd-toggle-icon')" type="button">
+<span class="material-symbols-outlined text-[20px]" id="pwd-toggle-icon">visibility_off</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-error flex items-center gap-1.5 pt-0.5">
+<span class="material-symbols-outlined text-[14px]">shield_lock</span>
+                Password too weak (Must be 8+ chars with uppercase and symbol)
+              </p>
+</div>
+<div class="hidden flex-col space-y-1.5" id="field-confirm-pwd">
+<label class="font-label-md text-label-md text-on-surface" for="confirm-password">
+                Confirm Master Password
+              </label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-xl px-4 py-3 pl-11 pr-11 focus:outline-none focus:ring-2 focus:ring-error bg-error-container/10 transition-all" id="confirm-password" placeholder="Re-enter sequence" type="password" value="pass456">
+<span class="material-symbols-outlined absolute left-3.5 top-3.5 text-error text-[20px]">lock_reset</span>
+<button class="absolute right-3.5 top-3.5 text-on-surface-variant hover:text-on-surface focus:outline-none" onclick="togglePasswordVisibility('confirm-password', 'cpwd-toggle-icon')" type="button">
+<span class="material-symbols-outlined text-[20px]" id="cpwd-toggle-icon">visibility_off</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 pt-1">
+<div class="flex-1 h-1.5 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full w-1/4 bg-error rounded-full"></div>
+</div>
+<span class="font-label-sm text-label-sm text-error uppercase">Weak (Tier 1)</span>
+</div>
+<p class="font-body-sm text-body-sm text-error flex items-center gap-1.5 pt-0.5">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+                Passwords do not match
+              </p>
+</div>
+<div class="flex items-start gap-3 pt-2">
+<input checked="" class="mt-1 w-4 h-4 rounded bg-surface-container-lowest border-outline-variant text-primary-container focus:ring-primary-container focus:ring-offset-0 focus:outline-none cursor-pointer" id="terms-checkbox" type="checkbox">
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer select-none" for="terms-checkbox">
+                I agree to the FireGuard Cloud Terms of Service, Autonomous Emergency Control Protocols, and Privacy Standard.
+              </label>
+</div>
+<div class="pt-2">
+<button class="w-full bg-primary-container hover:bg-on-primary-fixed-variant text-on-primary font-title-md text-title-md py-3.5 px-6 rounded-xl shadow-[0_0_20px_rgba(255,107,44,0.35)] transition-all flex items-center justify-center gap-2" id="submit-action-btn" type="button">
+<span class="material-symbols-outlined text-[22px]">bolt</span>
+                Sign In to Sentinel Hub
+              </button>
+</div>
+</form>
+<div class="relative flex py-5 items-center">
+<div class="flex-grow border-t border-surface-container-highest"></div>
+<span class="flex-shrink mx-4 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Federated Access</span>
+<div class="flex-grow border-t border-surface-container-highest"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<button class="flex items-center justify-center gap-2.5 py-2.5 px-4 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors" type="button">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+<path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"></path>
+</svg>
+              Google Workspace
+            </button>
+<button class="flex items-center justify-center gap-2.5 py-2.5 px-4 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">corporate_fare</span>
+              Enterprise SSO
+            </button>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container-highest/60 flex items-center justify-center gap-2 text-center">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[18px]">support_agent</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Need emergency access? <a class="text-secondary hover:underline" href="#">Contact your facility administrator</a>.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function switchMode(mode) {
+      const loginTab = document.getElementById('tab-login');
+      const registerTab = document.getElementById('tab-register');
+      const nameField = document.getElementById('field-fullname');
+      const confirmPwdField = document.getElementById('field-confirm-pwd');
+      const submitBtn = document.getElementById('submit-action-btn');
+      const statusBanner = document.getElementById('status-banner');
+
+      if (mode === 'register') {
+        registerTab.className = "flex-1 py-2.5 rounded-lg font-label-md text-label-md transition-all text-center flex items-center justify-center gap-2 bg-surface-container-high text-on-surface shadow-md";
+        loginTab.className = "flex-1 py-2.5 rounded-lg font-label-md text-label-md transition-all text-center flex items-center justify-center gap-2 text-on-surface-variant hover:text-on-surface";
+        
+        nameField.classList.remove('hidden');
+        nameField.classList.add('flex');
+        confirmPwdField.classList.remove('hidden');
+        confirmPwdField.classList.add('flex');
+
+        submitBtn.innerHTML = '<span class="material-symbols-outlined text-[22px]">how_to_reg</span> Request Operator Access';
+        statusBanner.classList.remove('hidden');
+      } else {
+        loginTab.className = "flex-1 py-2.5 rounded-lg font-label-md text-label-md transition-all text-center flex items-center justify-center gap-2 bg-surface-container-high text-on-surface shadow-md";
+        registerTab.className = "flex-1 py-2.5 rounded-lg font-label-md text-label-md transition-all text-center flex items-center justify-center gap-2 text-on-surface-variant hover:text-on-surface";
+
+        nameField.classList.add('hidden');
+        nameField.classList.remove('flex');
+        confirmPwdField.classList.add('hidden');
+        confirmPwdField.classList.remove('flex');
+
+        submitBtn.innerHTML = '<span class="material-symbols-outlined text-[22px]">bolt</span> Sign In to Sentinel Hub';
+        statusBanner.classList.remove('hidden');
+      }
+    }
+
+    function togglePasswordVisibility(inputId, iconId) {
+      const input = document.getElementById(inputId);
+      const icon = document.getElementById(iconId);
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.textContent = 'visibility';
+      } else {
+        input.type = 'password';
+        icon.textContent = 'visibility_off';
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-[#141418] text-on-surface border-t border-surface-container-highest/60 py-12 px-margin mt-12"><div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8"><div><div class="flex items-center gap-space-sm mb-3"><img alt="FireGuard Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XzNAUlbZsTPMEmv3onAPWPjQZbp7mfGFNUuQpq6ZavnvbKOFztEFVtzHUaCERud9__GIq0U04ZUrfNtm51gj1XwdSQhwQd6eKs8-NmoloXb-aYDlSLgTazylXLBVCYDTfxrS7euWcMVIlwtzQHg2-GQkS28a8RrQqykZ_C40IYp24jfEWovUcaC5YVecsocRkZVijO1FFVo7Vs4oGR_0ceUFWotph2-__QzEQHBIr4UvnStx3L8Vk-cA"><span class="font-title-md text-title-md text-on-surface tracking-wide uppercase">FireGuard</span></div><p class="font-body-md text-body-md text-on-surface-variant">Fire safety that moves</p></div><div><h3 class="font-title-md text-title-md text-on-surface mb-3 font-semibold">Quick Links</h3><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-primary transition-colors" data-path="home" href="#">Home</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="products" href="#">Products</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="dashboard" href="#">Dashboard</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="login" href="#">Login</a></li></ul></div><div><h3 class="font-title-md text-title-md text-on-surface mb-3 font-semibold">Contact Us</h3><ul class="flex flex-col gap-2.5 font-body-sm text-body-sm text-on-surface-variant"><li class="flex items-center gap-2"><svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><a class="hover:text-primary transition-colors" href="mailto:contact@fireguard.com">contact@fireguard.com</a></li><li class="flex items-center gap-2"><svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><a class="hover:text-primary transition-colors" href="tel:+919876543210">+91 98765 43210</a></li><li class="flex items-center gap-2"><svg class="w-4 h-4 text-primary shrink-0 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg><a class="hover:text-primary transition-colors" href="https://instagram.com/fireguard.official" rel="noopener noreferrer" target="_blank">@fireguard.official</a></li><li class="flex items-center gap-2"><svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg><span class="">Pune, Maharashtra</span></li></ul></div></div><div class="max-w-[1440px] mx-auto pt-6 border-t border-surface-container-highest/40 text-center font-body-sm text-body-sm text-on-surface-variant"><p class="">© 2026 FireGuard. All rights reserved.</p></div></footer>
+
+
+
+
+
+
+
+
+
+</body></html>
